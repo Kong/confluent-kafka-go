@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde/protobuf"
+	"github.com/kong/confluent-kafka-go/kafka"
+	"github.com/kong/confluent-kafka-go/schemaregistry"
+	"github.com/kong/confluent-kafka-go/schemaregistry/serde"
+	"github.com/kong/confluent-kafka-go/schemaregistry/serde/protobuf"
 )
 
 func main() {

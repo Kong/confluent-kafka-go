@@ -42,7 +42,7 @@ High-level balanced consumer
 ```golang
 import (
 	"fmt"
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/kong/confluent-kafka-go/kafka"
 )
 
 func main() {
@@ -78,7 +78,7 @@ Producer
 ```golang
 import (
 	"fmt"
-	"github.com/confluentinc/confluent-kafka-go/kafka"
+	"github.com/kong/confluent-kafka-go/kafka"
 )
 
 func main() {
@@ -137,7 +137,7 @@ confluent-kafka-go.
 Import the `kafka` package from GitHub in your code:
 
 ```golang
-import "github.com/confluentinc/confluent-kafka-go/kafka"
+import "github.com/kong/confluent-kafka-go/kafka"
 ```
 
 Build your project:
@@ -160,12 +160,12 @@ Install the client
 
 Manual install:
 ```bash
-go get -u github.com/confluentinc/confluent-kafka-go/kafka
+go get -u github.com/kong/confluent-kafka-go/kafka
 ```
 
 Golang import:
 ```golang
-import "github.com/confluentinc/confluent-kafka-go/kafka"
+import "github.com/kong/confluent-kafka-go/kafka"
 ```
 
 librdkafka

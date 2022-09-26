@@ -19,9 +19,9 @@ package jsonschema
 import (
 	"testing"
 
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/test"
+	"github.com/kong/confluent-kafka-go/schemaregistry"
+	"github.com/kong/confluent-kafka-go/schemaregistry/serde"
+	"github.com/kong/confluent-kafka-go/schemaregistry/test"
 )
 
 func TestJSONSchemaSerdeWithSimple(t *testing.T) {

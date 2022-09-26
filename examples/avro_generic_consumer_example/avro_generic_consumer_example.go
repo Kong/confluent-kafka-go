@@ -26,10 +26,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde"
-	"github.com/confluentinc/confluent-kafka-go/schemaregistry/serde/avro"
+	"github.com/kong/confluent-kafka-go/kafka"
+	"github.com/kong/confluent-kafka-go/schemaregistry"
+	"github.com/kong/confluent-kafka-go/schemaregistry/serde"
+	"github.com/kong/confluent-kafka-go/schemaregistry/serde/avro"
 )
 
 func main() {
