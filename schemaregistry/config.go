@@ -50,6 +50,11 @@ type Config struct {
 	RequestTimeoutMs int
 	// CacheCapacity positive integer or zero for unbounded capacity
 	CacheCapacity int
+
+	// RegistryName specifies name of registry ONLY if using aws glue as schema registry
+	RegistryName string
+	// AwsRegion specifies aws region ONLY if using aws glue as schema registry
+	AwsRegion string
 }
 
 // NewConfig returns a new configuration instance with sane defaults.
@@ -83,6 +88,16 @@ func NewConfigWithAuthentication(url string, username string, password string) *
 
 	c.BasicAuthUserInfo = fmt.Sprintf("%s:%s", username, password)
 	c.BasicAuthCredentialsSource = "USER_INFO"
+
+	return c
+}
+
+// NewConfigWithAuthentication returns a new configuration instance using AWS Glue schema registry
+func NewConfigForAwsGlue(registryName string, awsRegion string) *Config {
+	c := &Config{}
+
+	c.RegistryName = registryName
+	c.AwsRegion = awsRegion
 
 	return c
 }
