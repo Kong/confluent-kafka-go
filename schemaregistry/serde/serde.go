@@ -150,12 +150,9 @@ func (s *BaseSerializer) GetID(topic string, msg interface{}, info schemaregistr
 		if err != nil {
 			return -1, err
 		}
-		id, err = s.Client.GetID(subject, info, false)
+		_, err := s.Client.GetID(subject, info, false)
 		if err != nil {
 			return -1, err
-		}
-		if id != useSchemaID {
-			return -1, fmt.Errorf("failed to match schema ID (%d != %d)", id, useSchemaID)
 		}
 	} else if useLatest {
 		metadata, err := s.Client.GetLatestSchemaMetadata(subject)
